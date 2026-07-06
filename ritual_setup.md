@@ -106,7 +106,7 @@ just enable the checkbox), then paste one of these. Build/tweak your own combos 
 | Map 1 — any Omen-chance tablet | `chance to be Omens` | Any tablet with the Omen-chance mod |
 | Freedom of Faith (unique) | `Freedom of Faith` | The unique itself |
 | Slot 2 — reroll count (2-3 extra) | `rerolling Favours.*[2-9] additional times?` | Tablets granting 2+ extra Favour rerolls |
-| Slot 3 — Omen chance **and** Tribute | `(?=.*chance to be Omens)(?=.*increased Tribute)` | Tablets with both mods on the same item |
+| Slot 3 — Omen chance **and** Tribute | `"l fa" "iced"` | Tablets with both mods on the same item |
 | Slot 4 — reduced reroll cost **and** Omen chance | `(?=.*reduced Tribute)(?=.*chance to be Omens)` | Tablets with both mods on the same item |
 | Any Tribute-boosting tablet | `Sacrificed.*increased Tribute` | Tablets granting increased Tribute from sacrifices |
 | Any reroll-cost-reduction tablet | `Rerolling Favours.*reduced Tribute` | Tablets that make rerolls cheaper |
