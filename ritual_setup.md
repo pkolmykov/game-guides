@@ -30,74 +30,78 @@ scales from budget T6-9 yellow maps up through red maps.
 
 ---
 
-## Tablet & Map Setup
+## Tablet & Map Setup (Head of the King)
 
-### First Maps (Build Tribute)
+Head of the King runs a chain of maps (e.g. 1-7): **map 1 is outside the City**, the rest are **inside the
+City**. The further into the chain you go, the more Tribute/rerolls you get — so the *same* good tablet
+combo pays out progressively better; you don't need a different premium tablet just for the last map.
 
-Use cheap, budget tablets to clear efficiently and build up Tribute without overspending — save your
-divines for the cash-out map.
+### Map 1 — Outside the City (cheap setup)
 
-| Component | Recommendation |
-|-----------|----------------|
-| **Tablet type** | Cheap Ritual Tablets (any density filler) |
-| **Filler mods** | Increased Monster Pack Size / Rare Monster % / Monster Rarity |
-| **Goal** | Efficient clear speed, cheap Tribute generation, avoid unnecessary risk |
-
-### Last Map (Cash-Out)
-
-Spend saved Tribute here on a heavily juiced tablet + map for max reroll/defer value.
+This map only exists to **set up/unlock** the rest of the chain — you're not spending real Tribute yet, so
+don't overpay for the tablet here.
 
 | Component | Recommendation |
 |-----------|----------------|
-| **Tablet type** | Ritual Tablets (City/Precursor tablets also stack general monster density mods) |
-| **Core mod** | Monsters Sacrificed at Ritual Altars grant **% increased Tribute** — mandatory |
-| **S tier** | Ritual Favours have **% increased chance to be Omens** |
-| **S tier** | Can **Reroll Favours twice as many times** at Ritual Altars |
-| **A tier** | Favours Rerolled have **% chance to cost no Tribute** |
-| **A tier** | Ritual Altars allow **rerolling Favours an additional time** |
-| **Filler** | Increased Monster Pack Size / Rare Monster % / Monster Rarity |
-| **Avoid** | Mods that increase difficulty (extra bosses, etc.) unless your build is robust |
+| **Tablet type** | Any cheap Ritual Tablet |
+| **Only mod that matters** | **Increased chance to be Omens** — cheap to find, worth having even here |
+| **Everything else** | Irrelevant — don't pay extra for other mods on this tablet |
+
+### Maps 2-7 — Inside the City (4-tablet setup)
+
+You get **4 tablet slots** per City map. Run this **same combo on every City map** in the chain:
+
+| Slot | Tablet | Notes |
+|------|--------|-------|
+| **1** | **Freedom of Faith** (unique) | Mandatory — reroll Favours at Ritual Altars **twice as many times** |
+| **2** | Reroll tablet | Most expensive slot (~13-20 divine): Ritual Altars allow rerolling Favours **3 additional times**. Buy the cheapest tablet with just this mod — only pay more if bonus mods are cheap add-ons |
+| **3** | Omen chance + Tribute | **Increased chance to be Omens** + **Monsters Sacrificed grant increased Tribute** |
+| **4** | Reduced reroll cost + Omen chance | **Rerolling Favours costs reduced Tribute** + **more chance to be Omens** |
+
+- Don't over-invest in "double reroll" tablet strategies (running 2x reroll-focused tablets) unless
+  specifically chasing Headhunter/Mageblood — it inflates cost more than it improves average profit.
+- Check current tablet prices before buying — reroll tablets in particular swing widely (e.g. 10-20 divine)
+  depending on market supply; cost efficiency matters more here than anywhere else in the setup.
+- **Avoid** mods that increase difficulty (extra bosses, etc.) unless your build is robust.
 
 ---
 
 ## Tablet Trade Links
 
-> Generated: 2026-07-06 14:35 · Instant buyout only · 10 uses remaining (anti-scam)
+> Generated: 2026-07-06 14:44 · Instant buyout only · 10 uses remaining (anti-scam)
 
-### First Maps (Build Tribute)
+### Map 1 — Outside the City (cheap setup)
 
-Cheap density tablets — clear efficiently and build up Tribute without overspending.
-
-| # | Search | Link |
-|---|--------|------|
-| 1 | 🟢 Budget : Increased Pack Size in Map | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/3q9LLj9Pc5) |
-| 2 | 🟢 Budget : Map has increased number of Rare Monsters | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/G6O55lgoUb) |
-| 3 | 🟢 Budget : Map has increased Monster Rarity | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/pJgPPYvXt0) |
-| 4 | ⭐ Budget combo: Pack Size AND Rare Monsters (cheap density) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/zbgWW9zOc4) |
-| 5 | 🏆 Cheapest density filler (weighted, price-capped) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/7npLLZogu5) |
-
-### Last Map (Cash-Out)
-
-Best/juiced tablets — spend saved Tribute here for max Omens/Uniques.
+Only mod that matters here is Omen chance — this map just sets up the rest of the chain.
 
 | # | Search | Link |
 |---|--------|------|
-| 1 | 🟣 S+ : Monsters Sacrificed grant increased Tribute (core mod) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/rPBRlKzZSQ) |
-| 2 | 🔴 S : Ritual Favours increased chance to be Omens | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/jW5Y8loRSX) |
-| 3 | 🔴 S : Reroll Favours twice as many times | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/V57PnbLlTp) |
-| 4 | ⭐ Best combo: Tribute% AND Omen chance% | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/5nvLMYkJSa) |
-| 5 | 🟡 A : Favours Rerolled % chance to cost no Tribute | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/kyR93nDQs5) |
-| 6 | 🟡 A : Extra Altar Reroll + Pack Size/Rare Monster filler | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/eR5p6nM6UL) |
-| 7 | 🏆 S+ required + weighted sort (best overall) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/lg5eVnaQSV) |
+| 1 | 🟢 Cheap : Increased chance to be Omens (Map 1 only) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/jW5Y8loRSX) |
+| 2 | ⭐ Cheap combo (if cheap): Omen chance AND increased Tribute | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/KlOrrMWqs5) |
+| 3 | 🏆 Cheapest Omen-chance tablet (weighted, price-capped) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/8rKLLwB8iV) |
+
+### Maps 2-7 — Inside the City (4-tablet setup)
+
+Run this same 4-tablet combo on every City map in the chain; Head of the King naturally pays out
+more Tribute/rerolls the further into the chain you are.
+
+| # | Search | Link |
+|---|--------|------|
+| 1 | 🟣 Slot 1 : Freedom of Faith (unique — mandatory) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/BgO44w6wt8) |
+| 2 | 🔴 Slot 2 : Reroll Favours 3 additional times (most expensive slot) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/V57PPdrgCp) |
+| 3 | 🔴 Slot 3 : Omen chance + increased Tribute | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/KlOrrMWqs5) |
+| 4 | 🔴 Slot 4 : Reduced Tribute cost on reroll + more Omen chance | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/X3doojXBuP) |
+| 5 | 🏆 Slot 2 : 3x reroll required + weighted sort (best value) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/X3doojzKsP) |
 
 ---
 
 ## Map Running & Tribute Management
 
-1. Run maps with Ritual + Tablet bonuses; clear **all altars** in the map for max Tribute.
-2. **Don't spend Tribute immediately** — defer expensive Omens/Uniques you can't yet afford.
-3. **Save Tribute for the final map in a chain**: build up Tribute over several maps, then cash it all in on
-   a heavily juiced tablet + map for maximum reroll/defer value.
+1. Run the **Head of the King** map chain: map 1 outside the City (cheap tablet), then City maps with the
+   4-tablet combo above.
+2. Clear **all altars** in each map for max Tribute.
+3. **Defer** Favours/Omens you can't yet afford rather than skipping them — Tribute and rerolls grow the
+   further into the chain you get, so later City maps naturally afford the bigger rewards.
 4. **Prioritize high-value Omens**: only buy/lock rewards worth 1 Divine+ on the trade economy; skip junk.
 5. **Final fill**: if the "offer to King" bar is close to full, spend leftover Tribute to top it off before
    moving on.
@@ -123,8 +127,9 @@ for jackpot Omens and pinnacle Uniques (e.g. Mageblood-tier drops).
 ## Quick Ritual Farm Checklist
 
 - ✔ Atlas tree: full Ritual focus, Tribute boosts, reduced reroll/defer cost, all extra-altar nodes.
-- ✔ Tablet strategy: pack size/rare/magic monster boosts stacked with "increased Tribute".
+- ✔ Map 1 (outside City): cheap tablet, Omen chance is the only mod worth having.
+- ✔ Maps 2-7 (City): same 4-tablet combo every run — Freedom of Faith, 3x reroll tablet, Omen+Tribute,
+  reduced-cost-reroll+Omen.
 - ✔ Only defer & reroll for expensive Omens/Uniques — skip junk rewards.
-- ✔ Chain maps: build Tribute, then cash out hard on a fully juiced tablet + map.
 - ✔ Run King in the Mists whenever the Offer bar is full for pinnacle drops.
 - ✔ Sell high-value belts/Omens/Uniques promptly.
