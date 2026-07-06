@@ -107,7 +107,7 @@ just enable the checkbox), then paste one of these. Build/tweak your own combos 
 | Freedom of Faith (unique) | `Freedom of Faith` | The unique itself |
 | Slot 2 — reroll count (2-3 extra) | `rerolling Favours.*[2-9] additional times?` | Tablets granting 2+ extra Favour rerolls |
 | Slot 3 — Omen chance **and** Tribute | `"l fa" "iced"` | Tablets with both mods on the same item |
-| Slot 4 — reduced reroll cost **and** Omen chance | `(?=.*reduced Tribute)(?=.*chance to be Omens)` | Tablets with both mods on the same item |
+| Slot 4 — reduced reroll cost **and** Omen chance | `"lled" "l fa"` | Tablets with both mods on the same item |
 | Any Tribute-boosting tablet | `Sacrificed.*increased Tribute` | Tablets granting increased Tribute from sacrifices |
 | Any reroll-cost-reduction tablet | `Rerolling Favours.*reduced Tribute` | Tablets that make rerolls cheaper |
 | All Ritual Tablets (any mod) | `Ritual Altars\|chance to be Omens\|Tribute` | Broad catch-all — use to sort a messy stash tab |
