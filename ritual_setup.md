@@ -91,7 +91,7 @@ more Tribute/rerolls the further into the chain you are.
 | 2 | 🔴 Slot 2 : Reroll Favours 3 additional times (most expensive slot) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/V57PPdrgCp) |
 | 3 | 🔴 Slot 3 : Omen chance + increased Tribute | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/KlOrrMWqs5) |
 | 4 | 🔴 Slot 4 : Reduced Tribute cost on reroll + more Omen chance | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/X3doojXBuP) |
-| 5 | 🏆 Slot 2 : 3x reroll required + weighted sort (best value) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/X3doojzKsP) |
+| 5 | 🏆 Slot 2 : 3x reroll required + weighted sort (best value) | [trade link](https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur/kyR9pLlKF5) |
 
 ---
 
