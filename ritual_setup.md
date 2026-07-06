@@ -97,9 +97,12 @@ more Tribute/rerolls the further into the chain you are.
 
 ## Stash Search Regex (finding tablets you already own)
 
-The stash search box supports **regex** — click the search box, toggle **Regex** on (or prefix isn't needed,
-just enable the checkbox), then paste one of these. Build/tweak your own combos with the
-[poe2.re regex tool](https://poe2.re/). Lookaheads let you match tablets that have **multiple mods at once**.
+The stash search box supports **regex** — click the search box, toggle **Regex** on, then paste one of these.
+Build/tweak your own combos with the [poe2.re regex tool](https://poe2.re/). To match **multiple mods on
+different lines** of the same tablet, don't use regex lookaheads — each mod is on its own line and `.` does
+not cross line breaks, so `(?=.*X)(?=.*Y)` silently fails when X and Y are on separate lines. Instead use
+PoE's native **quoted AND syntax**: `"term1" "term2"` (space-separated quoted substrings, all must be present
+anywhere on the item, regex not required).
 
 | Tablet role | Regex | Matches |
 |-------------|-------|---------|
@@ -114,7 +117,8 @@ just enable the checkbox), then paste one of these. Build/tweak your own combos 
 
 - These match the **rendered mod text** on the item tooltip, so wording like "reduced" vs "increased" depends
   on whether the roll is positive or negative — adjust if your version shows different phrasing.
-- Combine any two mod fragments with `(?=.*X)(?=.*Y)` to hunt for a specific dual-mod tablet in a full stash tab.
+- Combine any two mod fragments with `"X" "Y"` (quoted, space-separated) to hunt for a specific dual-mod
+  tablet in a full stash tab — this is the reliable cross-line AND syntax; regex lookaheads don't work here.
 
 ---
 
