@@ -148,6 +148,26 @@ SEARCHES = [
     }),
 ]
 
+# ── Anti-scam filter: require full "Uses Remaining" on every search ─────────
+# Scammers list partially-used tablets that look like fresh ones in the search
+# preview. Requiring min:10 uses remaining (max charges) filters these out.
+
+USES_REMAINING_FILTER = {"id": "pseudo.pseudo_number_of_uses_remaining", "value": {"min": 10}, "disabled": False}
+
+
+def with_uses_remaining(search):
+    """Ensure every search's query requires min:10 Tablet uses remaining."""
+    stats = search["query"].setdefault("stats", [])
+    and_group = next((g for g in stats if g.get("type") == "and"), None)
+    if and_group is None:
+        and_group = {"type": "and", "filters": []}
+        stats.append(and_group)
+    and_group["filters"].append(USES_REMAINING_FILTER)
+    return search
+
+
+SEARCHES = [(name, with_uses_remaining(search)) for name, search in SEARCHES]
+
 # ── Generate links ────────────────────────────────────────────────────────────
 
 api_url = f"https://www.pathofexile.com/api/trade2/search/{urllib.parse.quote(LEAGUE)}"
@@ -192,7 +212,7 @@ for name, query in SEARCHES:
 md_path = os.path.join(os.path.dirname(__file__), "expedition_setup.md")
 generated_at = datetime.now().strftime("%Y-%m-%d %H:%M")
 
-table_lines = ["## Tablet Trade Links\n\n", f"> Generated: {generated_at} · Instant buyout only\n\n",
+table_lines = ["## Tablet Trade Links\n\n", f"> Generated: {generated_at} · Instant buyout only · 10 uses remaining (anti-scam)\n\n",
                "| # | Search | Link |\n", "|---|--------|------|\n"]
 for i, (name, url) in enumerate(results, 1):
     if url:

@@ -29,17 +29,17 @@ chests — with no junk weapon/armor chests since the loot pass.
 
 ## Tablet Trade Links
 
-> Generated: 2026-07-04 14:17 · Instant buyout only
+> Generated: 2026-07-06 14:27 · Instant buyout only · 10 uses remaining (anti-scam)
 
 | # | Search | Link |
 |---|--------|------|
-| 1 | 🟣 Aldur Saga: +2 Random Map Modifiers (core mod) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/QLBgk9rwfw) |
-| 2 | 🔴 S : Monster Effectiveness | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/WvkaJrpVHm) |
-| 3 | 🔴 S : Increased Number of Rare Monsters | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/8rKn7pQBUV) |
-| 4 | ⭐ Best combo (Aldur Saga): +2 Modifiers AND Monster Effectiveness | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/eR5oOrkoFL) |
-| 5 | ⭐ Best combo (Aldur Saga): +2 Modifiers AND Increased Rare Monsters | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/jW5vOyGRUX) |
-| 6 | 🟡 A : Monster Rarity + Item Rarity (budget/non-Aldur) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/zbg8OlgOi4) |
-| 7 | 🏆 Aldur Saga: S+ required + weighted sort (best overall) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/vegyOGoZuE) |
+| 1 | 🟣 Aldur Saga: +2 Random Map Modifiers (core mod) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/KlOrnMGqh5) |
+| 2 | 🔴 S : Monster Effectiveness | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/EBOr9MXVH5) |
+| 3 | 🔴 S : Increased Number of Rare Monsters | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/bGQmy5OXhL) |
+| 4 | ⭐ Best combo (Aldur Saga): +2 Modifiers AND Monster Effectiveness | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/G6O5nwlocb) |
+| 5 | ⭐ Best combo (Aldur Saga): +2 Modifiers AND Increased Rare Monsters | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/Z6MlDjY6tQ) |
+| 6 | 🟡 A : Monster Rarity + Item Rarity (budget/non-Aldur) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/MdO3Jn6LFJ) |
+| 7 | 🏆 Aldur Saga: S+ required + weighted sort (best overall) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/6z3LMwZksG) |
 
 ---
 
