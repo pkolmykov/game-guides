@@ -98,9 +98,11 @@ more Tribute/rerolls the further into the chain you are.
 ## Map Level & Delirium Notes
 
 - **Is an 80+ level map required?** Not strictly for Ritual itself, but the **top-tier ("purple") Omens**
-  only appear in the reward pool when the map's monster/area level is **80+** — practically a **T15-T16
-  Waystone**. Below that, only lower-tier Omens/uniques can show up. Since Omens are the main profit driver
-  here, run at least T15 (area lvl 80) whenever possible.
+  only appear in the reward pool when the map's monster/area level is **80+**. Note **T15 Waystones are only
+  area level 79** — you need a **T16 Waystone (area lvl 80)**, obtained by Vaal Orbing a T15 (low chance), or
+  a T15 run with a **monster-level-boosting Atlas modifier** (e.g. Corrupted/Irradiated node). Below level 80,
+  only lower-tier Omens/uniques can show up. Since Omens are the main profit driver here, prioritize T16 (or
+  a level-80-boosted T15) whenever possible.
 - **Does 200% Delirium affect Tribute?** Yes, indirectly. Delirium-spawned monsters **can be revived by a
   Ritual** if they die inside the altar's circle before it's activated — more Delirium means more (often
   magic/rare) monsters feeding the Tribute pool. Delirium doesn't change the Tribute formula itself, it just
