@@ -32,6 +32,21 @@ scales from budget T6-9 yellow maps up through red maps.
 
 ## Tablet & Map Setup
 
+### First Maps (Build Tribute)
+
+Use cheap, budget tablets to clear efficiently and build up Tribute without overspending — save your
+divines for the cash-out map.
+
+| Component | Recommendation |
+|-----------|----------------|
+| **Tablet type** | Cheap Ritual Tablets (any density filler) |
+| **Filler mods** | Increased Monster Pack Size / Rare Monster % / Monster Rarity |
+| **Goal** | Efficient clear speed, cheap Tribute generation, avoid unnecessary risk |
+
+### Last Map (Cash-Out)
+
+Spend saved Tribute here on a heavily juiced tablet + map for max reroll/defer value.
+
 | Component | Recommendation |
 |-----------|----------------|
 | **Tablet type** | Ritual Tablets (City/Precursor tablets also stack general monster density mods) |
@@ -47,7 +62,23 @@ scales from budget T6-9 yellow maps up through red maps.
 
 ## Tablet Trade Links
 
-> Generated: 2026-07-06 14:31 · Instant buyout only · 10 uses remaining (anti-scam)
+> Generated: 2026-07-06 14:35 · Instant buyout only · 10 uses remaining (anti-scam)
+
+### First Maps (Build Tribute)
+
+Cheap density tablets — clear efficiently and build up Tribute without overspending.
+
+| # | Search | Link |
+|---|--------|------|
+| 1 | 🟢 Budget : Increased Pack Size in Map | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/3q9LLj9Pc5) |
+| 2 | 🟢 Budget : Map has increased number of Rare Monsters | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/G6O55lgoUb) |
+| 3 | 🟢 Budget : Map has increased Monster Rarity | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/pJgPPYvXt0) |
+| 4 | ⭐ Budget combo: Pack Size AND Rare Monsters (cheap density) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/zbgWW9zOc4) |
+| 5 | 🏆 Cheapest density filler (weighted, price-capped) | [trade link](https://www.pathofexile.com/trade2/search/Runes%20of%20Aldur/7npLLZogu5) |
+
+### Last Map (Cash-Out)
+
+Best/juiced tablets — spend saved Tribute here for max Omens/Uniques.
 
 | # | Search | Link |
 |---|--------|------|

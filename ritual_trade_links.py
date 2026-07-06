@@ -55,7 +55,75 @@ STATUS_BUYOUT = {"option": "securable"}
 # explicit.stat_2017682521 -> % increased Pack Size in Map
 # explicit.stat_4142653832 -> Map has % increased Monster Rarity
 
-SEARCHES = [
+FIRST_MAP_SEARCHES = [
+    ("🟢 Budget : Increased Pack Size in Map", {
+        "query": {
+            "type": "Ritual Tablet",
+            "status": STATUS_BUYOUT,
+            "stats": [{"type": "and", "filters": [
+                {"id": "explicit.stat_2017682521", "value": {"min": 1}}
+            ]}],
+        },
+        "sort": {"price": "asc"}
+    }),
+    ("🟢 Budget : Map has increased number of Rare Monsters", {
+        "query": {
+            "type": "Ritual Tablet",
+            "status": STATUS_BUYOUT,
+            "stats": [{"type": "and", "filters": [
+                {"id": "explicit.stat_3793155082", "value": {"min": 1}}
+            ]}],
+        },
+        "sort": {"price": "asc"}
+    }),
+    ("🟢 Budget : Map has increased Monster Rarity", {
+        "query": {
+            "type": "Ritual Tablet",
+            "status": STATUS_BUYOUT,
+            "stats": [{"type": "and", "filters": [
+                {"id": "explicit.stat_4142653832", "value": {"min": 1}}
+            ]}],
+        },
+        "sort": {"price": "asc"}
+    }),
+    ("⭐ Budget combo: Pack Size AND Rare Monsters (cheap density)", {
+        "query": {
+            "type": "Ritual Tablet",
+            "status": STATUS_BUYOUT,
+            "stats": [{"type": "and", "filters": [
+                {"id": "explicit.stat_2017682521", "value": {"min": 1}},
+                {"id": "explicit.stat_3793155082", "value": {"min": 1}}
+            ]}],
+        },
+        "sort": {"price": "asc"}
+    }),
+    # Weighted, price-capped search: cheap density filler for chain/build-up maps.
+    # No hard-required mod — just maximize density per divine spent.
+    #
+    # Stat                                          weight  tier
+    # Map has % increased number of Rare Monsters      3     filler
+    # % increased Pack Size in Map                      2     filler
+    # Map has % increased Monster Rarity                 2     filler
+    ("🏆 Cheapest density filler (weighted, price-capped)", {
+        "query": {
+            "status": STATUS_BUYOUT,
+            "type": "Ritual Tablet",
+            "stats": [
+                {"type": "weight", "disabled": False, "filters": [
+                    {"id": "explicit.stat_3793155082", "value": {"weight": 3}, "disabled": False},
+                    {"id": "explicit.stat_2017682521", "value": {"weight": 2}, "disabled": False},
+                    {"id": "explicit.stat_4142653832", "value": {"weight": 2}, "disabled": False},
+                ]},
+            ],
+            "filters": {
+                "trade_filters": {"filters": {"price": {"max": 50}}}
+            },
+        },
+        "sort": {"price": "asc"}
+    }),
+]
+
+LAST_MAP_SEARCHES = [
     ("🟣 S+ : Monsters Sacrificed grant increased Tribute (core mod)", {
         "query": {
             "type": "Ritual Tablet",
@@ -171,7 +239,9 @@ def with_uses_remaining(search):
     return search
 
 
-SEARCHES = [(name, with_uses_remaining(search)) for name, search in SEARCHES]
+FIRST_MAP_SEARCHES = [(name, with_uses_remaining(search)) for name, search in FIRST_MAP_SEARCHES]
+LAST_MAP_SEARCHES = [(name, with_uses_remaining(search)) for name, search in LAST_MAP_SEARCHES]
+
 
 # ── Generate links ────────────────────────────────────────────────────────────
 
@@ -193,37 +263,53 @@ print(f"  POE2 Ritual Tablet Trade Links — {LEAGUE}")
 print(f"  Instant buyout only")
 print(f"{'='*60}\n")
 
-results = []
 
-for name, query in SEARCHES:
-    try:
-        data = json.dumps(query).encode()
-        req = urllib.request.Request(api_url, data=data, headers=headers)
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            result = json.loads(resp.read())
-            sid = result.get("id", "")
-            url = f"{trade_base}/{sid}"
+def run_searches(searches, label):
+    print(f"--- {label} ---\n")
+    out = []
+    for name, query in searches:
+        try:
+            data = json.dumps(query).encode()
+            req = urllib.request.Request(api_url, data=data, headers=headers)
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                result = json.loads(resp.read())
+                sid = result.get("id", "")
+                url = f"{trade_base}/{sid}"
+                print(f"{name}")
+                print(f"  {url}\n")
+                out.append((name, url))
+        except Exception as e:
             print(f"{name}")
-            print(f"  {url}\n")
-            results.append((name, url))
-    except Exception as e:
-        print(f"{name}")
-        print(f"  ERROR: {e}\n")
-        results.append((name, None))
-    time.sleep(3)
+            print(f"  ERROR: {e}\n")
+            out.append((name, None))
+        time.sleep(3)
+    return out
+
+
+first_map_results = run_searches(FIRST_MAP_SEARCHES, "First Maps (Build Tribute)")
+last_map_results = run_searches(LAST_MAP_SEARCHES, "Last Map (Cash-Out)")
 
 # ── Insert/update Trade Links section in ritual_setup.md ────────────────────
 
 md_path = os.path.join(os.path.dirname(__file__), "ritual_setup.md")
 generated_at = datetime.now().strftime("%Y-%m-%d %H:%M")
 
+
+def build_table(results):
+    lines = ["| # | Search | Link |\n", "|---|--------|------|\n"]
+    for i, (name, url) in enumerate(results, 1):
+        if url:
+            lines.append(f"| {i} | {name} | [trade link]({url}) |\n")
+        else:
+            lines.append(f"| {i} | {name} | ❌ failed |\n")
+    return lines
+
+
 table_lines = ["## Tablet Trade Links\n\n", f"> Generated: {generated_at} · Instant buyout only · 10 uses remaining (anti-scam)\n\n",
-               "| # | Search | Link |\n", "|---|--------|------|\n"]
-for i, (name, url) in enumerate(results, 1):
-    if url:
-        table_lines.append(f"| {i} | {name} | [trade link]({url}) |\n")
-    else:
-        table_lines.append(f"| {i} | {name} | ❌ failed |\n")
+               "### First Maps (Build Tribute)\n\n", "Cheap density tablets — clear efficiently and build up Tribute without overspending.\n\n"]
+table_lines += build_table(first_map_results)
+table_lines += ["\n### Last Map (Cash-Out)\n\n", "Best/juiced tablets — spend saved Tribute here for max Omens/Uniques.\n\n"]
+table_lines += build_table(last_map_results)
 
 with open(md_path) as f:
     content = f.read()
