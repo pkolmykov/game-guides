@@ -95,6 +95,29 @@ more Tribute/rerolls the further into the chain you are.
 
 ---
 
+## Stash Search Regex (finding tablets you already own)
+
+The stash search box supports **regex** — click the search box, toggle **Regex** on (or prefix isn't needed,
+just enable the checkbox), then paste one of these. Build/tweak your own combos with the
+[poe2.re regex tool](https://poe2.re/). Lookaheads let you match tablets that have **multiple mods at once**.
+
+| Tablet role | Regex | Matches |
+|-------------|-------|---------|
+| Map 1 — any Omen-chance tablet | `chance to be Omens` | Any tablet with the Omen-chance mod |
+| Freedom of Faith (unique) | `Freedom of Faith` | The unique itself |
+| Slot 2 — reroll count (2-3 extra) | `rerolling Favours.*[2-9] additional times?` | Tablets granting 2+ extra Favour rerolls |
+| Slot 3 — Omen chance **and** Tribute | `(?=.*chance to be Omens)(?=.*increased Tribute)` | Tablets with both mods on the same item |
+| Slot 4 — reduced reroll cost **and** Omen chance | `(?=.*reduced Tribute)(?=.*chance to be Omens)` | Tablets with both mods on the same item |
+| Any Tribute-boosting tablet | `Sacrificed.*increased Tribute` | Tablets granting increased Tribute from sacrifices |
+| Any reroll-cost-reduction tablet | `Rerolling Favours.*reduced Tribute` | Tablets that make rerolls cheaper |
+| All Ritual Tablets (any mod) | `Ritual Altars\|chance to be Omens\|Tribute` | Broad catch-all — use to sort a messy stash tab |
+
+- These match the **rendered mod text** on the item tooltip, so wording like "reduced" vs "increased" depends
+  on whether the roll is positive or negative — adjust if your version shows different phrasing.
+- Combine any two mod fragments with `(?=.*X)(?=.*Y)` to hunt for a specific dual-mod tablet in a full stash tab.
+
+---
+
 ## Map Level & Delirium Notes
 
 - **Is an 80+ level map required?** Not strictly for Ritual itself, but the **top-tier ("purple") Omens**
